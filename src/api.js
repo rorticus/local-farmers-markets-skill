@@ -21,5 +21,42 @@ function getMarketsByLocation(latitude, longitude) {
         .then(res => res.json());
 }
 
+function createSellFilter(sells) {
+    const filters = {
+        "organic items": "organic",
+        "baked goods": "bakedGoods",
+        "cheese": "cheese",
+        "crafts": "crafts",
+        "flowers": "flowers",
+        "eggs": "eggs",
+        "seafood": "seafood",
+        "herbs": "herbs",
+        "vegetables": "vegetables",
+        "honey": "honey",
+        "jam": "jams",
+        "maple syrup": "maples",
+        "meat": "meat",
+        "nuts": "nuts",
+        "poultry": "poultry",
+        "soap": "soap",
+        "coffee": "coffee",
+        "beans": "beans",
+        "fruit": "fruit",
+        "grains": "grains",
+        "mushrooms": "mushrooms"
+    };
+
+    if (!filters[sells]) {
+        return function () {
+            return false;
+        };
+    }
+
+    return function (item) {
+        return item.sells[filters[sells]];
+    };
+}
+
 exports.getLocationByCity = getLocationByCity;
 exports.getMarketsByLocation = getMarketsByLocation;
+exports.createSellFilter = createSellFilter;
