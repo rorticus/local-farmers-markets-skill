@@ -1,0 +1,18 @@
+{
+  "name": "dojo-skill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "zip": "zip -r local-markets-skill.zip *"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7"
+  },
+  "devDependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
