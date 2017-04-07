@@ -1,8 +1,8 @@
 autoscale: true
 
-# Developing Mad Skillz for Alexa
+# How to learn to do Alexa skills good and maybe do other things good too.
 
-![](https://www.technobuffalo.com/wp-content/uploads/2015/06/Amazon-Echo-Main-Image.jpg)
+![](http://blog.ezdealio.com/wp-content/uploads/2015/03/zoolander-1.jpg)
 
 --- 
 
